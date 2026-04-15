@@ -1,6 +1,6 @@
 {
   "name": "@capgo/capacitor-proximity",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "description": "Capacitor plugin for enabling proximity monitoring in mobile apps.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
