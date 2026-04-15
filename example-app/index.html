@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capgo Proximity Demo</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Capgo Proximity</p>
+        <h1>Toggle native proximity monitoring and inspect the current device state.</h1>
+        <p class="lede">
+          This demo is meant for a real phone. On Android the current app window dims while the sensor is covered. On
+          iOS the operating system handles the screen behavior once monitoring is enabled.
+        </p>
+      </section>
+
+      <section class="panel action-panel">
+        <button id="refresh-status" class="accent">Refresh status</button>
+        <button id="enable-proximity">Enable proximity</button>
+        <button id="disable-proximity">Disable proximity</button>
+        <button id="plugin-version">Plugin version</button>
+      </section>
+
+      <section class="panel note-panel">
+        <p>
+          Tip: keep this app in the foreground while testing. Browsers and simulators usually do not expose a usable
+          proximity sensor, so the demo is expected to report `available: false` there.
+        </p>
+      </section>
+
+      <section class="panel output-panel">
+        <div class="output-header">
+          <h2>Output</h2>
+          <span id="status-pill">Idle</span>
+        </div>
+        <pre id="plugin-output">Tap "Refresh status" to inspect the current native state.</pre>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

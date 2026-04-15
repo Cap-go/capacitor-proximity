@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "Maximilien0405CapacitorProximity",
+    name: "CapgoCapacitorProximity",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "Maximilien0405CapacitorProximity",
+            name: "CapgoCapacitorProximity",
             targets: ["CapacitorProximityPlugin"])
     ],
     dependencies: [

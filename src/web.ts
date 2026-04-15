@@ -1,12 +1,27 @@
 import { WebPlugin } from '@capacitor/core';
-import type { CapacitorProximityPlugin } from './definitions';
+
+import type { CapacitorProximityPlugin, PluginVersionResult, ProximityStatusResult } from './definitions';
 
 export class CapacitorProximityWeb extends WebPlugin implements CapacitorProximityPlugin {
   async enable(): Promise<void> {
-    throw new Error('Proximity sensor is not supported on the web.');
+    throw this.unavailable('Proximity monitoring is not available on web.');
   }
 
   async disable(): Promise<void> {
-    throw new Error('Proximity sensor is not supported on the web.');
+    throw this.unavailable('Proximity monitoring is not available on web.');
+  }
+
+  async getStatus(): Promise<ProximityStatusResult> {
+    return {
+      available: false,
+      enabled: false,
+      platform: 'web',
+    };
+  }
+
+  async getPluginVersion(): Promise<PluginVersionResult> {
+    return {
+      version: 'web',
+    };
   }
 }
