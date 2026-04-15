@@ -1,6 +1,6 @@
 {
-  "appId": "com.example.plugin",
-  "appName": "example-app",
+  "appId": "app.capgo.proximity.example",
+  "appName": "Capgo Proximity Demo",
   "webDir": "dist",
   "plugins": {
     "SplashScreen": {

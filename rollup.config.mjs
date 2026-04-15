@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorCapacitorProximity',
+      name: 'capacitorProximity',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },
