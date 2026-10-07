@@ -1,6 +1,6 @@
 # @capgo/capacitor-proximity
 
-Blank the screen when the phone is held to the ear, like the native phone app, for calls and voice messages in your Capacitor app.
+Blank or dim the screen when the phone is held to the ear, like the native phone app, for calls and voice messages in your Capacitor app.
 
 <a href="https://capgo.app/?ref=plugin_proximity"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-proximity" alt="Capgo - Instant updates for Capacitor" /></a>
 
@@ -20,7 +20,7 @@ Blank the screen when the phone is held to the ear, like the native phone app, f
 - **Enable**: `enable()` starts proximity monitoring.
 - **Disable**: `disable()` stops it.
 - **Status**: `getStatus()` returns sensor availability and the enabled state.
-- **Native sensors**: `UIDevice` proximity monitoring on iOS. On Android, the proximity sensor dims the screen to black while something is close.
+- **Native sensors**: `UIDevice` proximity monitoring on iOS. On Android, the proximity sensor dims the screen to its lowest brightness while something is close.
 - **Platforms**: iOS and Android. Not available on web.
 
 ## Why this plugin
