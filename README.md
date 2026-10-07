@@ -1,12 +1,27 @@
 # @capgo/capacitor-proximity
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-proximity" alt="Capgo - Instant updates for Capacitor" /></a>
+
+Blank the screen when the phone is held to the ear, like the native phone app, for calls and voice messages in your Capacitor app.
+
+<a href="https://capgo.app/?ref=plugin_proximity"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-proximity" alt="Capgo - Instant updates for Capacitor" /></a>
 
 <div align="center">
-  <h2><a href="https://capgo.app/?ref=plugin_proximity"> ➡️ Get Instant updates for your App with Capgo</a></h2>
-  <h2><a href="https://capgo.app/consulting/?ref=plugin_proximity"> Missing a feature? We'll build the plugin for you 💪</a></h2>
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_proximity">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_proximity">Missing a feature? We'll build the plugin for you 💪</a></p>
 </div>
 
-Capacitor plugin for enabling proximity monitoring in mobile apps.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-proximity/main/assets/github-social-preview.png" alt="@capgo/capacitor-proximity for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **Enable**: `enable()` starts proximity monitoring.
+- **Disable**: `disable()` stops it.
+- **Status**: `getStatus()` returns sensor availability and the enabled state.
+- **Native sensors**: `UIDevice` proximity monitoring on iOS. On Android, the proximity sensor dims the screen to black while something is close.
+- **Platforms**: iOS and Android. Not available on web.
 
 ## Why this plugin
 
